@@ -2,15 +2,15 @@ import React from 'react';
 
 const Card = (props) => {
       return (
-            <div>
+            <div className='card'>
                   <h5 className=''>{props.name}</h5>
                   <img
                         src={props.image}
-                        className='my-img-fluid'
+                        className='responsive'
                         alt={props.name}
                   />
                   <p className=''>{props.price}</p>
-                  <hr></hr>
+                  {/* <hr></hr> */}
             </div>
       );
 };

@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
+import './css/Products.css';
 
 
 
@@ -24,7 +25,7 @@ const Products = () => {
    
    
    return (
-         <section id='Items'>
+         <section className="MainProductBox">
                {products.map((product) => {
                      return (
                            <>

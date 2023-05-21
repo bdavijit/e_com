@@ -1,0 +1,17 @@
+.MainProductBox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+    
+}
+.card{
+border: 2px solid black;
+padding: 1rem;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
