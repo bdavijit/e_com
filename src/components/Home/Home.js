@@ -1,10 +1,13 @@
 import React from 'react';
+import Calculator from '../Calculator/Calculator';
 
 const Home = () => {
     return (
-        <div>
-            Home
-        </div>
+          <div>
+                Home
+                <hr />
+                <Calculator />
+          </div>
     );
 };
 
