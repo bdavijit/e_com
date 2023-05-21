@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import Card from "./Card";
 
 
 
@@ -22,9 +23,23 @@ const Products = () => {
   }, []);
    
    
-   return <div>
-    Products
-    </div>;
+   return (
+         <section id='Items'>
+               {products.map((product) => {
+                     return (
+                           <>
+                                 <Card
+                                       key={product.id}
+                                       name={product.name}
+                                       image={product.img}
+                                       price={product.price}
+                                    //    product={product}
+                                 ></Card>
+                           </>
+                     );
+               })}
+         </section>
+   );
 };
 
 export default Products;
